@@ -1,0 +1,11 @@
+class Circle:
+    def __init__(self, num, numb, numbe):
+      self.num=num
+      self.numb=numb
+      self.numbe=numbe
+
+    def calculate_circumference(self):
+      return self.num*self.numb*self.numbe
+
+c = Circle(5, 2, 3.14)
+print(c.calculate_circumference())
