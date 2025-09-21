@@ -1,0 +1,6 @@
+class Book:
+  def __init__(self,book,author):
+    self.book=book
+    self.author=author
+bookinfo=Book("My life in full","Indra Nooyi")
+print("The book,",bookinfo.book,"is by the author,",bookinfo.author)
