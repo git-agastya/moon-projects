@@ -1,0 +1,43 @@
+from abc import ABC, abstractmethod
+class Spacecraft(ABC):
+  @abstractmethod
+  def launch(self):
+    pass
+  @abstractmethod
+  def communicate(self):
+    pass
+  @abstractmethod
+  def land(self):
+    pass
+
+class Shuttle(Spacecraft):
+  def launch(self):
+    print("Shuttle launches with roaring engines...")
+  def communicate(self):
+    print("Shuttle communicates with the mission control team and base...")
+  def land(self):
+    print("Shuttle safely lands on Earth.")
+
+class Satellite(Spacecraft):
+  def launch(self):
+    print("Satellite launches along with spacecraft...")
+  def communicate(self):
+    print("Satellite takes photos and sends orbit data...")
+  def land(self):
+    print("Satellite continues to orbit.")
+
+class Rover(Spacecraft):
+  def launch(self):
+    print("Rover slowly departs on Mars surface...")
+  def communicate(self):
+    print("Rover sends soil and rock smples...")
+  def land(self):
+    print("Rover powers down after mission is complete.")
+
+def space(Spacecraft):
+  Spacecraft.launch()
+  Spacecraft.communicate()
+  Spacecraft.land()
+
+spaceshuttle=Shuttle()
+space(spaceshuttle)
