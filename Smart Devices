@@ -1,0 +1,46 @@
+from abc import ABC, abstractmethod
+class Smartappliance(ABC):
+  @abstractmethod
+  def on(self):
+    pass
+  @abstractmethod
+  def status(self):
+    pass
+  @abstractmethod
+  def off(self):
+    pass
+
+class Light(Smartappliance):
+  def on(self):
+    print("Smartlight turns on and the room suddenly turns into the color crimson.")
+  def status(self):
+    print("Smartlight is currently the color of crimson and will turn off when you command it to.")
+  def off(self):
+    print("Smartlight slowly turns off and the room is back to the original color of white.")
+
+class Thermostat(Smartappliance):
+  def on(self):
+    print("Smartthermostat turns on and it makes the warm cooler so tell whatever temperature you command it to and it will.")
+  def status(self):
+    print("Smartthermostat is currently 72 degrees Fahrenheit.")
+  def off(self):
+    print("Smartthermostat turns of and the room becomes it's original temperature.")
+
+class Speaker(Smartappliance):
+  def on(self):
+    print("Smartspeaker turns on and is ready to play any music you want.")
+  def status(self):
+    print("Smartspeaker is on and is currently playing Life Goes On by Oliver Tree.")
+  def off(self):
+    print("Smartspeaker turns off and the music stops.")
+
+def device(Smartappliance):
+  Smartappliance.on()
+  Smartappliance.status()
+  Smartappliance.off()
+
+smartlight=Light()
+device(smartlight)
+
+smartthermostat=Thermostat()
+device(smartthermostat)
