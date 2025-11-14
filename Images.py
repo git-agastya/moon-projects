@@ -1,4 +1,5 @@
-#you are going to have to pip install open cv-python(open computer vision)
+##you are going to have to pip install open cv-python(open computer vision)
+#not just that you will also have to run this in google colab becuase it has an higher chanc of working there
 import cv2
 import numpy as np
 from google.colab.patches import cv2_imshow
